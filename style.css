@@ -13,7 +13,7 @@
 }
 
 
-/* ===== CSS VARIABLES ===== */
+/* CSS VARIABLES */
 :root {
     --color-navy: #1e2354;
     --color-blue-hero: #3b8fc4;
@@ -63,16 +63,7 @@ a {
     color: inherit;
 }
 
-/* ============================================================
-   NAVBAR
-   Uses the pure-CSS checkbox trick for hamburger menu.
-   #nav-toggle (hidden checkbox) is the state controller.
-   .hamburger-btn (label) toggles the checkbox.
-   .mobile-menu slides in when checkbox is :checked.
-   .mobile-overlay (label) closes menu when clicking outside.
-============================================================ */
 
-/* Hide the checkbox – it's only used as state */
 .nav-toggle-checkbox {
     display: none;
 }
@@ -202,7 +193,7 @@ a {
     font-weight: 700;
 }
 
-/* ── Hamburger button (3 bars) ── */
+
 .hamburger-btn {
     display: none;
     /* shown only on mobile via media query */
@@ -224,7 +215,7 @@ a {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Animate bars → X when checkbox is checked */
+
 .nav-toggle-checkbox:checked~.navbar__inner .hamburger-btn span:nth-child(1) {
     transform: translateY(8.75px) rotate(45deg);
 }
@@ -238,7 +229,7 @@ a {
     transform: translateY(-8.75px) rotate(-45deg);
 }
 
-/* ── Mobile slide-in drawer ── */
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -253,7 +244,7 @@ a {
     overflow-y: auto;
 }
 
-/* Slide IN when checkbox is checked */
+
 .nav-toggle-checkbox:checked~.mobile-menu {
     right: 0;
 }
@@ -303,7 +294,7 @@ a {
     height: 24px;
 }
 
-/* ── Overlay: darkens page; click closes the drawer ── */
+
 .mobile-overlay {
     display: none;
     position: fixed;
@@ -317,7 +308,7 @@ a {
     display: block;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
     position: relative;
     background-color: var(--color-blue-hero);
@@ -393,7 +384,7 @@ a {
     transform: translateY(3px);
 }
 
-/* ===== TAGLINE ===== */
+/* TAGLINE */
 .tagline {
     background: var(--color-cream);
     text-align: center;
@@ -415,7 +406,7 @@ a {
     font-weight: 900;
 }
 
-/* ===== BEST SELLERS ===== */
+/* BEST SELLERS */
 .best-sellers {
     background: var(--color-cream);
     padding: 60px 0 60px;
@@ -641,7 +632,7 @@ a {
     transform: translateY(-2px);
 }
 
-/* ===== SECTION BADGES ===== */
+/*  SECTION BADGES  */
 .section-badge {
     display: inline-block;
     padding: 1px 8px;
@@ -683,7 +674,7 @@ hr {
     border: 1px solid black;
 }
 
-/* ===== DISCOVER ===== */
+/*  DISCOVER */
 .discover {
     background: var(--color-cream);
     padding: 70px 5% 60px;
@@ -764,7 +755,7 @@ hr {
     border-color: var(--color-navy);
 }
 
-/* ===== ORIGINS ===== */
+/*  ORIGINS */
 .origins {
     position: relative;
     min-height: 680px;
@@ -890,7 +881,7 @@ hr {
     color: var(--color-dark);
 }
 
-/* ===== REVIEWS ===== */
+/*  REVIEWS  */
 .reviews {
     background: var(--color-cream);
     padding: 120px 5%;
@@ -913,7 +904,7 @@ hr {
     font-style: italic;
 }
 
-/* ===== REVIEWS ROW ===== */
+/*  REVIEWS ROW  */
 
 .reviews-row {
     display: flex;
@@ -929,7 +920,7 @@ hr {
     display: none;
 }
 
-/* ===== REVIEW CARD ===== */
+/*  REVIEW CARD  */
 
 .review-card {
 
@@ -1037,7 +1028,7 @@ hr {
 
 
 
-/* ===== CAFE ===== */
+/*  CAFE  */
 .cafe {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1099,7 +1090,7 @@ hr {
     color: var(--color-navy);
 }
 
-/* ===== LATTES ===== */
+/*  LATTES  */
 .lattes {
     background: #c07020;
     padding: 60px 5%;
@@ -1149,8 +1140,6 @@ hr {
     justify-content: center;
     align-items: center;
     min-height: 300px;
-
-
 }
 
 .latte-card__img-wrap {
@@ -1219,7 +1208,7 @@ hr {
 }
 
 
-/* ===== JOURNAL ===== */
+/*  JOURNAL  */
 .journal {
     background: var(--color-cream);
     padding: 60px 5%;
@@ -1359,7 +1348,7 @@ hr {
     justify-content: center;
 }
 
-/* ===== ABOUT BANNER ===== */
+/*  ABOUT BANNER  */
 .about-banner {
     position: relative;
     height: 100vh;
@@ -1438,7 +1427,7 @@ hr {
     background: rgba(200, 70, 10, 0.15);
 }
 
-/* ===== NEWSLETTER ===== */
+/*  NEWSLETTER  */
 .newsletter {
     background: #C0DBFF;
     padding: 50px 5%;
@@ -1545,7 +1534,7 @@ hr {
     color: var(--color-white);
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 .footer {
     background-color: #C0DBFF;
     padding: 60px 5% 40px;
@@ -1606,7 +1595,7 @@ hr {
     max-width: 480px;
 }
 
-/* ===== FOOTER ILLUSTRATION ===== */
+/*  FOOTER ILLUSTRATION  */
 .footer-illustration {
     background: var(--color-lavender);
     position: relative;

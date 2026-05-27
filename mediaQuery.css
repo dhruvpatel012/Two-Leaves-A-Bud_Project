@@ -1,0 +1,421 @@
+/* =============================================
+   1200px
+============================================= */
+@media (max-width: 1200px) {
+
+
+    .navbar__left {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 17px;
+    }
+
+    .navbar__logo img {
+        width: 80%;
+    }
+
+
+    .navbar__right {
+        gap: 14px;
+    }
+
+    .navbar__right a {
+        font-size: 10px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(33% - 14px);
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .journal-card {
+        flex: 0 0 calc(33% - 11px);
+    }
+
+    .review-card {
+        flex: 0 0 calc(33% - 11px);
+    }
+
+    .navbar__right a:not(.cart-btn) {
+        font-size: 11px;
+    }
+
+    .journal-card__img-wrap~p {
+        margin-top: 6.3rem;
+    }
+}
+
+/* =============================================
+   992px
+============================================= */
+@media (max-width: 992px) {
+
+    /* Navbar: hide right links text, keep cart */
+    /* .navbar__right a:not(.cart-btn) {
+        display: none;
+    } */
+
+
+    /* ── Show hamburger, hide desktop nav items ── */
+    .hamburger-btn {
+        display: flex;
+        padding: 0rem 0rem 0rem 0rem;
+    }
+
+    .navbar__left {
+        display: none;
+    }
+
+    .navbar__right {
+        display: none;
+    }
+
+    .navbar__inner {
+        justify-content: space-between;
+    }
+
+
+    /* Show just the cart inline next to hamburger on mobile */
+    .navbar__inner .cart-inline {
+        display: flex;
+    }
+
+    /* Reposition logo for mobile: stays centered */
+    .navbar__logo {
+        left: 10%;
+         /* transform: translateX(-50%); */
+    }
+
+    .navbar__logo span {
+        font-size: 15px;
+    }
+
+    /* Layout: logo center, hamburger right */
+    .navbar__inner {
+        padding: 0 16px;
+    }
+
+
+    .product-card {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .review-card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .journal-card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .journal-card__img-wrap~p {
+        margin-top: 6.3rem;
+    }
+
+    .cafe {
+        grid-template-columns: 1fr;
+    }
+
+    .cafe__img {
+        min-height: 280px;
+    }
+
+    .latte-card {
+        grid-template-columns: 1fr;
+    }
+
+    .latte-card__img-wrap {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .latte-card__body {
+        padding: 20px 30px 30px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-banner {
+        flex-direction: column;
+    }
+
+    .about-banner__overlay {
+        width: 100%;
+        min-height: auto;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        gap: 18rem;
+    }
+
+    .about-banner__img {
+        min-height: 240px;
+    }
+
+    .newsletter__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .origins__values {
+        gap: 40px;
+    }
+}
+
+/* =============================================
+   768px  ← Main hamburger breakpoint
+============================================= */
+@media (max-width: 768px) {
+
+    /* ── Show hamburger, hide desktop nav items ── */
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .navbar__left {
+        display: none;
+    }
+
+    .navbar__right {
+        display: none;
+    }
+
+    /* Keep cart icon visible on its own */
+    .navbar__right .cart-btn {
+        display: flex;
+    }
+
+    /* Show just the cart inline next to hamburger on mobile */
+    .navbar__inner .cart-inline {
+        display: flex;
+    }
+
+    /* Reposition logo for mobile: stays centered */
+    .navbar__logo {
+        font-size: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar__logo span {
+        font-size: 15px;
+    }
+
+    /* Layout: logo center, hamburger right */
+    .navbar__inner {
+        padding: 0 16px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 420px;
+        padding: 40px 5%;
+    }
+
+    .hero__heading {
+        font-size: 30px;
+    }
+
+    .origins__heading {
+        font-size: 60px;
+    }
+
+    .origins__text {
+        font-size: 18px;
+    }
+
+    .cafe__content {
+        padding: 40px 32px;
+    }
+
+    .review-card {
+
+        /* movable cards on mobile */
+
+        flex: 0 0 75%;
+
+        min-width: 75%;
+    }
+
+
+
+    .lattes__badge-circle {
+        display: none;
+    }
+
+    /* Journal */
+    .journal-card {
+        flex: 0 0 calc(70% - 8px);
+    }
+
+    /* Footer */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter__input {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Origins badge moves up */
+    .badge-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 8px;
+    }
+}
+
+/* =============================================
+   576px
+============================================= */
+@media (max-width: 576px) {
+
+    .navbar__inner {
+        padding: 0 12px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(80% - 10px);
+    }
+
+    .review-card {
+        flex: 0 0 calc(85% - 8px);
+    }
+
+    .journal-card {
+        flex: 0 0 85%;
+    }
+
+    .discover__heading {
+        font-size: 26px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .origins {
+        min-height: 500px;
+    }
+
+    .origins__heading {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .origins__text {
+        font-size: 16px;
+    }
+
+    .origins__values {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .badge-circle {
+        display: none;
+    }
+
+    .cafe__content {
+        padding: 30px 20px;
+    }
+
+    .latte-card__body {
+        padding: 16px 20px 24px;
+    }
+
+    .carousel-nav--prev {
+        left: -10px;
+    }
+
+    .carousel-nav--next {
+        right: -10px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .footer-links-row2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-banner__heading {
+        font-size: 28px;
+    }
+
+    /* Newsletter stacks fully */
+    .newsletter__form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+        padding: 13px;
+    }
+}
+
+/* =============================================
+   420px  ← Very small phones
+============================================= */
+@media (max-width: 420px) {
+
+    .navbar__logo {
+        font-size: 16px;
+    }
+
+    .navbar__logo span {
+        font-size: 13px;
+    }
+
+    .hero__heading {
+        font-size: 26px;
+    }
+
+    .hero__sub {
+        font-size: 13px;
+    }
+
+    .origins__heading {
+        font-size: 34px;
+    }
+
+    .tagline__text {
+        font-size: 20px;
+    }
+
+    .latte-card__name {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-links-row2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile menu a bit narrower */
+    .mobile-menu {
+        width: 240px;
+    }
+}

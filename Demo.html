@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Leaves & A Bud</title>
+    <link rel="stylesheet" href="Demo.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+
+        <!-- Hidden checkbox – the hamburger trick -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+
+        <div class="navbar__inner">
+
+            <!-- Left nav links -->
+            <div class="navbar__left">
+                <a href="#" class="nav-link">Shop <i class="ri-arrow-down-s-line"></i></a>
+                <a href="#" class="nav-link">Learn <i class="ri-arrow-down-s-line"></i></a>
+                <a href="#" class="nav-link nav-link--star">Reviews <svg width="24" height="23" viewBox="0 0 24 23"
+                        fill="none" xmlns="http://www.w3.org/2000/svg" data-acsb-hidden="true" role="presentation">
+                        <path
+                            d="M11.9812 0.5L15.2477 8.06787L23.457 8.83867L17.269 14.2882L19.0747 22.3304L11.9812 18.1314L4.88764 22.3304L6.68798 14.2882L0.5 8.83867L8.70931 8.06787L11.9812 0.5Z"
+                            fill="#FFB500" stroke="#201C1A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M14.3623 15.9253C14.0301 16.2301 13.25 16.7223 11.9679 16.7223C10.6858 16.7224 9.64455 15.8909 9.64453 15.4546"
+                            stroke="#201C1A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M9.75832 14.9543C9.75832 14.9543 9.7335 15.2344 9.55474 15.5289C9.37597 15.8235 9.20904 16.0181 9.20904 16.0181"
+                            stroke="#201C1A" stroke-linecap="round"></path>
+                        <path
+                            d="M7.38728 11.2923C7.38724 10.5121 8.15647 9.87959 9.10445 9.87954C10.0524 9.87949 10.8217 10.5119 10.8218 11.2921"
+                            stroke="#201C1A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M13.1138 11.292C13.1138 10.5118 13.883 9.87932 14.831 9.87927C15.779 9.87922 16.5483 10.5116 16.5483 11.2918"
+                            stroke="#201C1A" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <ellipse cx="9.05864" cy="10.9366" rx="2.0737" ry="1.33229" fill="#201C1A"></ellipse>
+                        <ellipse cx="14.8765" cy="10.9363" rx="2.0737" ry="1.33229" fill="#201C1A"></ellipse>
+                        <path d="M10.6392 10.9088L13.1859 10.9087" stroke="#201C1A" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg></a>
+            </div>
+
+            <!-- Centered logo -->
+            <a href="#" class="navbar__logo" aria-label="Two Leaves and a Bud Home">
+                <img src="https://www.twoleavestea.com/cdn/shop/files/Twoleaves_logo.svg?v=1768205424&width=420" alt="">
+            </a>
+
+            <!-- Right nav links (desktop) -->
+            <div class="navbar__right">
+                <a href="#">My Account</a>
+                <a href="#">Cafe &amp; Wholesale Partners</a>
+                <a href="#">Tea Journal</a>
+                <a href="#" class="cart-btn" aria-label="Shopping cart, 8 items">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-badge">8</span>
+                </a>
+            </div>
+
+            <!-- Hamburger label – toggles the checkbox -->
+            <label for="nav-toggle" class="hamburger-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+        </div>
+
+        <!-- Mobile drawer – shown when checkbox is checked -->
+        <div class="mobile-menu">
+            <label for="nav-toggle" class="mobile-menu__close" aria-label="Close menu">
+                <i class="ri-close-line"></i>
+            </label>
+            <ul class="mobile-menu__list">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li class="divider"></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Cafe &amp; Wholesale Partners</a></li>
+                <li><a href="#">Tea Journal</a></li>
+            </ul>
+        </div>
+
+        <!-- Overlay to close menu when clicking outside -->
+        <label for="nav-toggle" class="mobile-overlay"></label>
+
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" aria-label="Hero banner">
+
+        <div class="hero__content">
+            <h1 class="hero__heading">A cup that fits the moment.</h1>
+            <p class="hero__sub">From compostable whole leaf tea sachets and iced tea to tea lattes and matcha, we've
+                got something for everyone.</p>
+            <a href="#" class="btn-primary">Shop Now</a>
+        </div>
+
+        <a href="#tagline" class="hero__scroll" aria-label="Scroll down">
+            <i class="ri-arrow-down-line"></i>
+        </a>
+
+    </section>
+
+
+    <!-- ===== TAGLINE ===== -->
+    <section class="tagline" id="tagline">
+        <p class="tagline__text">A <em>great</em> cup starts with a careful pluck - the top two leaves and a bud.</p>
+    </section>
+
+
+    <!-- ===== BEST SELLERS ===== -->
+    <section class="best-sellers" aria-label="Best sellers">
+        <div class="best-sellers__label">
+            <span class="badge-label">Best Sellers</span>
+        </div>
+
+        <div class="products-carousel" role="list">
+
+            <article class="product-card" role="listitem">
+                <div class="product-card__img-wrap">
+                    <span class="product-badge">Tea Sachets</span>
+                    <div class="product-rating"><i class="ri-star-fill"></i> 4.71 <span>(84)</span></div>
+                    <img src="./assets/organic_tropical_green_tea_sachet_featured.webp"
+                        alt="Organic Tropical Green Tea" />
+                    <button class="add-btn" aria-label="Add to cart">+ <span>Add</span></button>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__name">Organic Tropical Green Tea</h3>
+                    <p class="product-card__price"><span>From</span> $11.95</p>
+                    <p class="product-card__desc">Our Organic Tropical Green is a fruity and fun take on a classic green
+                        tea.</p>
+                </div>
+            </article>
+
+            <article class="product-card" role="listitem">
+                <div class="product-card__img-wrap">
+                    <span class="product-badge">Gifts &amp; Samplers</span>
+                    <div class="product-rating"><i class="ri-star-fill"></i> 5 <span>(2)</span></div>
+                    <img src="./assets/bundle-herbal-tea-trio-featured-image.webp" alt="Herbal Tea Trio" />
+                    <button class="add-btn" aria-label="Add to cart">+ <span>Add</span></button>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__name">Herbal Tea Trio</h3>
+                    <p class="product-card__price">$33.30</p>
+                    <p class="product-card__desc">A trio of soothing herbal teas.</p>
+                </div>
+            </article>
+
+            <article class="product-card" role="listitem">
+                <div class="product-card__img-wrap">
+                    <span class="product-badge">Naked Sachets</span>
+                    <div class="product-rating"><i class="ri-star-fill"></i> 5 <span>(11)</span></div>
+                    <img src="./assets/peppermint_naked_featured.webp" alt="Organic Peppermint" />
+                    <button class="add-btn" aria-label="Add to cart">+ <span>Add</span></button>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__name">Organic Peppermint – 50 Naked Tea Sachets</h3>
+                    <p class="product-card__price">$21.95</p>
+                    <p class="product-card__desc">Our organic Peppermint tea is made from peppermint grown in Washington
+                        State.</p>
+                </div>
+            </article>
+
+            <article class="product-card" role="listitem">
+                <div class="product-card__img-wrap">
+                    <span class="product-badge">Gifts &amp; Samplers</span>
+                    <div class="product-rating"><i class="ri-star-fill"></i> 4.85 <span>(41)</span></div>
+                    <img src="./assets/Bamboo_Tea_Chest.webp" alt="Classic Bamboo Tea Chest" />
+                    <button class="add-btn" aria-label="Add to cart">+ <span>Add</span></button>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__name">Classic Bamboo Tea Chest</h3>
+                    <p class="product-card__price">$42.95</p>
+                    <p class="product-card__desc">This 6-slot bamboo box offers a sampling of eight sachets each of six
+                        of our best selling teas.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="carousel-dots" aria-hidden="true">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="explore-btn">
+            <a href="#" class="btn-dark">Explore All Teas</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ===== DISCOVER ===== -->
+    <section class="discover" aria-label="Discover your tea">
+
+        <div class="discover__inner">
+            <span class="section-badge section-badge--orange">Discover</span>
+
+            <h2 class="discover__heading">
+                Let's find a cup that fits the <em>moment.</em><br>
+                What are you searching for?
+            </h2>
+
+            <input type="search" class="search-box" placeholder="Explore Your Tea" aria-label="Search for a tea" />
+
+            <p class="explore-label">Or explore by vibe…</p>
+
+            <div class="vibe-tags" role="list">
+                <a href="#" class="vibe-tag">A Sweet Treat</a>
+                <a href="#" class="vibe-tag">Evening Unwind</a>
+                <a href="#" class="vibe-tag">Focused &amp; Clear</a>
+                <a href="#" class="vibe-tag">Caffeine!</a>
+                <a href="#" class="vibe-tag">Caffeine-Free</a>
+                <a href="#" class="vibe-tag">Ceremony-Worthy</a>
+                <a href="#" class="vibe-tag">Whole Leaf</a>
+                <a href="#" class="vibe-tag">Over Ice</a>
+                <a href="#" class="vibe-tag">Lattes</a>
+                <a href="#" class="vibe-tag">Black Tea</a>
+                <a href="#" class="vibe-tag">Green Tea</a>
+                <a href="#" class="vibe-tag">Herbal Tea</a>
+                <a href="#" class="vibe-tag">Organic</a>
+                <a href="#" class="vibe-tag">Barista Favorite</a>
+                <a href="#" class="vibe-tag">Calm &amp; Cozy</a>
+                <a href="#" class="vibe-tag">Fruit Forward</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== ORIGINS ===== -->
+    <section class="origins" aria-label="Our origins">
+
+        <div class="origins__inner">
+            <span class="origins__label">Our Origins</span>
+            <h2 class="origins__heading">Born in<br>Colorado</h2>
+            <p class="origins__text">
+                Our founder, Richard, started Two Leaves and a Bud in pursuit of a truly great cup. Two decades later,
+                that same care and curiosity guide everything we make.
+            </p>
+            <div class="origins__values">
+
+                <div class="value-item">
+                    <div class="value-icon"><img src="./assets/Quality_without_pretense.svg" alt="plant"></div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon"><img src="./assets/Earth.svg" alt="Earth"></div>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-icon"><img src="./assets/Mountain.svg" alt="Mountain"></div>
+                </div>
+
+            </div>
+            <a href="#" class="btn-outline-white">Our Story</a>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews" aria-label="Customer reviews">
+
+        <div class="reviews__inner">
+            <span class="section-badge section-badge--green">Reviews</span>
+            <h2 class="reviews__heading">
+                Loved by tea people <em>everywhere.</em><br>
+                Here's what they're saying.
+            </h2>
+
+            <div class="reviews-row" role="list">
+
+                <article class="review-card" role="listitem">
+                    <div>
+                        <p class="review-card__quote">"The right amount of spice."</p>
+                        <p class="review-card__author">Angelina R.</p>
+                    </div>
+                    <div class="review-card__footer" style="background-color: #EA6D44;">
+                        <div class="review-product">
+                            <span class="review-product__name">Organic Mountain High Chai</span>
+                        </div>
+                        <a href="#" class="review-shop-btn"><span>Shop</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" role="listitem" style="background-color:#ABDF74;">
+                    <div>
+                        <p class="review-card__quote">"This drink is incredibly refreshing, especially when served over
+                            ice."</p>
+                        <p class="review-card__author">Jacob K.</p>
+                    </div>
+                    <div class="review-card__footer" style="background-color: #73BC25;">
+                        <div class="review-product">
+                            <span class="review-product__name">Organic Matcha Mint</span>
+                        </div>
+                        <a href="#" class="review-shop-btn"><span>Shop</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" role="listitem" style="background-color:#FFD265;">
+                    <div>
+                        <p class="review-card__quote">"One sip and you can feel the difference—clean energy, rich
+                            flavor. Literally liquid GOLD."</p>
+                        <p class="review-card__author">Harrison G.</p>
+                    </div>
+                    <div class="review-card__footer" style="background-color: #FFB500;">
+                        <div class="review-product">
+                            <span class="review-product__name"> Golden Latte Mix</span>
+                        </div>
+                        <a href="#" class="review-shop-btn"><span>Shop</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" role="listitem" style="background-color:#D9C2E1;">
+                    <div>
+                        <p class="review-card__quote">"The perfect addition to my mornings."</p>
+                        <p class="review-card__author">Morgan L.</p>
+                    </div>
+                    <div class="review-card__footer" style="background-color: #C790DB;">
+                        <div class="review-product">
+                            <span class="review-product__name">Jasmine Petal</span>
+                        </div>
+                        <a href="#" class="review-shop-btn"><span>Shop</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" role="listitem" style="background-color:#ADE674;">
+                    <div>
+                        <p class="review-card__quote">"Soo tasty and energizing."</p>
+                        <p class="review-card__author">Gracie M.</p>
+                    </div>
+                    <div class="review-card__footer" style="background-color: #8BC045;">
+                        <div class="review-product">
+                            <span class="review-product__name">Tropical Green Tea</span>
+                        </div>
+                        <a href="#" class="review-shop-btn"><span>Shop</span></a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== CAFE PARTNERS ===== -->
+    <section class="cafe" aria-label="Cafe and wholesale partners">
+
+        <div class="cafe__img">
+            <img src="./assets/Tea_Coffe.jpg" alt="Barista holding a matcha latte" />
+        </div>
+
+        <div class="cafe__content">
+            <h2 class="cafe__heading">Our Cafe &amp;<br>Wholesale Partners</h2>
+            <a href="#" class="btn-outline-white-sm">Learn More</a>
+        </div>
+
+    </section>
+
+    <!-- ===== LATTES ===== -->
+    <section class="lattes" aria-label="Our latte blends">
+
+        <div class="lattes__inner">
+
+            <div class="lattes__header">
+                <span class="section-badge section-badge--brown">Our Lattes</span>
+                <h2 class="lattes__heading">Barista Blends for Every Mood</h2>
+                <p class="lattes__sub">(No Training Required)</p>
+            </div>
+
+            <div class="latte-carousel">
+
+                <article class="latte-card">
+
+                    <div class="latte-card__img-wrap">
+                        <img src="./assets/Nice_Chai.webp" alt="Chai Latte" />
+                    </div>
+
+                    <div class="latte-card__body">
+                        <span class="latte-badge">Nice</span>
+                        <h3 class="latte-card__name">Chai<br>Latte Mix</h3>
+                        <p class="latte-card__desc">Our Nice Chai is a not too sweet, not too spicy, powdered latte mix
+                            meant for making tea lattes simple.</p>
+                        <a href="#" class="btn-latte">Shop Now</a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== JOURNAL ===== -->
+    <section class="journal" aria-label="Tea Journal">
+        <div class="journal__inner">
+
+            <span class="section-badge section-badge--yellow">Journal</span>
+
+            <h2 class="journal__heading">
+                A community steeped in <em>curiosity.</em> Explore<br>
+                recipes, culture, and everyday tea wisdom.
+            </h2>
+
+            <div class="journal-row" role="list">
+
+                <article class="journal-card journal-card--illus" role="listitem">
+                    <span class="journal-card__badge">Recipe</span>
+                    <div class="journal-card__img-wrap">
+                        <img src="./assets/Tea_Cup.svg" alt="">
+                    </div>
+                    <p class="journal-card__title">London Fog Earl Grey Latte</p>
+                </article>
+
+                <article class="journal-card" role="listitem">
+                    <span class="journal-card__badge">Caffeine</span>
+                    <img class="journal-card__img" src="./assets/Matcha_Packet.webp" alt="Nice Matcha" />
+                    <p class="journal-card__title">Nice Matcha Drinks to Delight!</p>
+                </article>
+
+                <article class="journal-card" role="listitem">
+                    <span class="journal-card__badge">Matcha</span>
+                    <img class="journal-card__img" src="./assets/Nice_Matcha.webp" alt="Iced Matcha Latte" />
+                    <p class="journal-card__title">"Nice" Iced Matcha Latte</p>
+                </article>
+
+                <article class="journal-card journal-card--illus4" role="listitem">
+                    <span class="journal-card__badge">Matcha</span>
+                    <div class="journal-card__img-wrap">
+                        <img src="./assets/Matcha_juice.svg" alt="">
+                    </div>
+                    <p class="journal-card__title">Matcha Energy Balls</p>
+                </article>
+            </div>
+
+            <div class="carousel-dots" aria-hidden="true">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <div class="explore-center">
+                <a href="#" class="btn-dark">Explore The Tea Journal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT BANNER ===== -->
+    <section class="about-banner" aria-label="About Two Leaves and a Bud">
+
+        <div class="about-banner__overlay">
+            <div>
+                <h2 class="about-banner__heading">Great Tea.<br>In Good<br>Company.</h2>
+            </div>
+            <a href="#" class="btn-about">About us</a>
+        </div>
+
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter" aria-label="Newsletter signup">
+        <div class="newsletter__inner">
+
+            <div class="newsletter__left">
+                <h3 class="newsletter__title">Steep With Us</h3>
+                <p class="newsletter__desc">Get news stories, brewing tips, and special offers straight to your inbox.
+                </p>
+
+                <div class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="name@email.com"
+                        aria-label="Email address" />
+                    <button type="button" class="btn-submit">Submit</button>
+                </div>
+
+            </div>
+
+            <div class="newsletter__social" aria-label="Social media">
+                <a href="#" class="social-btn" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="social-btn" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="social-btn" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+
+            <nav class="footer-links" aria-label="Footer navigation">
+
+                <div class="footer-col">
+
+                    <h4 class="footer-col__heading">Tea Varieties</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Whole Leaf Tea Sachets</a></li>
+                        <li><a href="#">Pure Matcha</a></li>
+                        <li><a href="#">Tea Lattes</a></li>
+                        <li><a href="#">Iced Tea</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Collections</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Matcha</a></li>
+                        <li><a href="#">Chai</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                        <li><a href="#">Naked Tea Sachets</a></li>
+                        <li><a href="#">Black Tea</a></li>
+                        <li><a href="#">Green Tea</a></li>
+                        <li><a href="#">Herbal Tea</a></li>
+                        <li><a href="#">Caffeine-Free</a></li>
+                        <li><a href="#">Gift &amp; Samplers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Lattes</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Nice Matcha</a></li>
+                        <li><a href="#">Barista Matcha</a></li>
+                        <li><a href="#">Nice Chai</a></li>
+                        <li><a href="#">Barista Chai</a></li>
+                        <li><a href="#">Two Roots Golden Latte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Learn</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Spirit</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Tea Journal</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">All Articles</a></li>
+                        <li><a href="#">Tea 101</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footer-links-row2">
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Support</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Loyal-Tea</a></li>
+                        <li><a href="#">Shipping &amp; Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col__heading">Cafe &amp; Wholesale Partners</h4>
+                    <ul class="footer-col__list">
+                        <li><a href="#">Cafe &amp; Wholesale Partners</a></li>
+                        <li><a href="#">Wholesale Login</a></li>
+                        <li><a href="#">Product and Media Files</a></li>
+                        <li><a href="#">Displays &amp; Starter Kits</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ===== FOOTER ILLUSTRATION ===== -->
+    <div class="footer-illustration" role="img" aria-label="Two Leaves and a Bud mountain landscape">
+
+        <p class="footer-illustration__logo">
+            two leaves<span>and a bud</span>
+        </p>
+
+        <svg class="footer-illustration__scene" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+            <rect width="1200" height="280" fill="#cdd4f0" />
+
+            <polygon
+                points="0,280 120,100 240,160 360,60 480,140 600,40 720,120 840,50 960,130 1080,80 1200,150 1200,280"
+                fill="#a8b4d8" opacity="0.6" />
+
+            <polygon
+                points="0,280 80,160 180,200 280,110 380,180 480,90 560,150 650,70 740,160 850,100 950,170 1040,110 1140,170 1200,130 1200,280"
+                fill="#8898c8" opacity="0.7" />
+
+            <polygon
+                points="0,280 0,230 100,170 200,220 320,140 420,200 520,130 600,100 680,130 780,200 880,140 980,220 1080,170 1200,210 1200,280"
+                fill="#1e2354" opacity="0.9" />
+
+            <g fill="#1e2354">
+                <polygon points="30,260 50,180 70,260" />
+                <rect x="47" y="255" width="6" height="20" />
+                <polygon points="60,260 85,160 110,260" />
+                <rect x="82" y="254" width="6" height="22" />
+                <polygon points="100,260 120,195 140,260" />
+                <rect x="117" y="255" width="6" height="18" />
+                <polygon points="130,260 155,175 180,260" />
+                <rect x="152" y="254" width="6" height="22" />
+                <polygon points="165,260 185,200 205,260" />
+                <rect x="182" y="256" width="6" height="16" />
+            </g>
+
+            <g fill="#1e2354">
+                <polygon points="980,260 1000,185 1020,260" />
+                <rect x="997" y="254" width="6" height="20" />
+                <polygon points="1010,260 1035,165 1060,260" />
+                <rect x="1032" y="254" width="6" height="22" />
+                <polygon points="1050,260 1070,195 1090,260" />
+                <rect x="1067" y="255" width="6" height="18" />
+                <polygon points="1080,260 1105,175 1130,260" />
+                <rect x="1102" y="254" width="6" height="22" />
+                <polygon points="1120,260 1140,200 1160,260" />
+                <rect x="1137" y="256" width="6" height="16" />
+                <polygon points="1150,260 1170,185 1190,260" />
+                <rect x="1167" y="254" width="6" height="20" />
+            </g>
+
+            <g fill="#1e2354">
+                <polygon points="230,260 250,190 270,260" />
+                <rect x="247" y="255" width="6" height="18" />
+                <polygon points="255,260 278,172 301,260" />
+                <rect x="275" y="254" width="6" height="22" />
+                <polygon points="295,260 315,200 335,260" />
+                <rect x="312" y="256" width="6" height="16" />
+            </g>
+
+            <g fill="#1e2354">
+                <polygon points="840,260 862,185 884,260" />
+                <rect x="859" y="254" width="6" height="20" />
+                <polygon points="875,260 900,168 925,260" />
+                <rect x="897" y="253" width="6" height="24" />
+                <polygon points="915,260 935,195 955,260" />
+                <rect x="932" y="255" width="6" height="18" />
+            </g>
+
+            <circle cx="600" cy="170" r="28" fill="#e8ecf8" stroke="#1e2354" stroke-width="2" />
+            <rect x="585" y="163" width="12" height="8" rx="4" fill="#1e2354" />
+            <rect x="601" y="163" width="12" height="8" rx="4" fill="#1e2354" />
+            <line x1="597" y1="167" x2="601" y2="167" stroke="#1e2354" stroke-width="1.5" />
+            <path d="M592 178 Q600 184 608 178" stroke="#1e2354" stroke-width="1.5" fill="none"
+                stroke-linecap="round" />
+        </svg>
+    </div>
+
+    <div class="footer-copy">
+        <p>© Two Leaves and a Bud 2026 &nbsp;·&nbsp; <a href="#">Site by Manufactur</a></p>
+    </div>
+
+</body>
+
+</html>

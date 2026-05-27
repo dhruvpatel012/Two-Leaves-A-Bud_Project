@@ -1,4 +1,4 @@
-# 🍃 Two Leaves & A Bud – Responsive Tea Brand Landing Page
+# Two Leaves & A Bud – Responsive Tea Brand Landing Page
 
 A modern, fully responsive tea ecommerce landing page built using pure HTML and CSS.  
 This project focuses on premium UI design, responsive layouts, reusable sections, and smooth user experience without using any frontend framework.

@@ -70,7 +70,7 @@ This project focuses on premium UI design, responsive layouts, reusable sections
 
 ---
 
-# 📁 File Structure
+# File Structure
 
 ```bash
 project-folder/
@@ -93,7 +93,7 @@ project-folder/
 
 ---
 
-# 📱 Responsive Breakpoints
+# Responsive Breakpoints
 
 | Screen Size | Breakpoint |
 |-------------|------------|

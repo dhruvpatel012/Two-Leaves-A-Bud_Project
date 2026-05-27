@@ -328,6 +328,12 @@
         left: -10px;
     }
 
+    .latte-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .carousel-nav--next {
         right: -10px;
     }

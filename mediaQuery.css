@@ -282,12 +282,25 @@
     }
 
     .discover__heading {
-        font-size: 26px;
+        font-size: 22px;
+        line-height: 2.1rem;
+        letter-spacing: 1px;
     }
 
     .search-box {
         width: 100%;
     }
+
+    .vibe-tags{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+.vibe-tag {
+    padding: 8px 12px 8px 20px;
+    font-size: 16px;
+}
 
     .origins {
         min-height: 500px;

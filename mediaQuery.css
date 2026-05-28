@@ -406,10 +406,30 @@
     }
 
 
-
-
     .latte-card__body {
         padding: 10px 40px 30px 40px;
+    }
+
+
+    .about-banner__overlay {
+
+        padding: 20px 16px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+
+    .about-banner__heading {
+        font-family: var(--font-display);
+        font-size: 20px;
+         margin-bottom: 34px;
+    }
+
+    .btn-about{
+        padding: 10px 20px;
     }
 
 

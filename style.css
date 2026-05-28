@@ -511,6 +511,10 @@ a {
     background: var(--color-white);
 }
 
+.product-card:hover .product-badge {
+    transform: rotateZ(-4deg);
+}
+
 .product-rating {
     position: absolute;
     top: 10px;
@@ -1264,6 +1268,10 @@ hr {
 
 .journal-card:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.journal-card:hover .journal-card__badge{
+    transform: rotateZ(-4deg);
 }
 
 .journal-card:nth-child(1) {

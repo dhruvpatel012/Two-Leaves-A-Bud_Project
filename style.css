@@ -1147,9 +1147,6 @@ hr {
 
 }
 
-.latte-card__img-wrap {
-    padding: 20px 0px;
-}
 
 .latte-card__img-wrap img {
     position: relative;
@@ -1157,6 +1154,8 @@ hr {
     height: fit-content;
     width: auto;
     object-fit: contain;
+
+     padding: 20px 0px;
 }
 
 .latte-card__body {

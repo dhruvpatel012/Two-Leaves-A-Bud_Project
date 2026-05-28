@@ -305,6 +305,7 @@
         padding: 0 22px;
     }
 
+
     .product-card {
         flex: 0 0 calc(80% - 10px);
     }
@@ -373,6 +374,7 @@
         left: -10px;
     }
 
+
     .latte-card {
         display: flex;
         flex-direction: column;
@@ -392,6 +394,7 @@
 
 
     .latte-card__body {
+        
         padding: 30px 40px;
     }
 

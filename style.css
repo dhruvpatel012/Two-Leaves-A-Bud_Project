@@ -1143,7 +1143,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    height: auto;
+
 }
 
 .latte-card__img-wrap {
@@ -1159,6 +1160,8 @@ hr {
 }
 
 .latte-card__body {
+    position: relative;
+    bottom: 4rem;
     padding: 40px;
 }
 

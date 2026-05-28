@@ -384,8 +384,8 @@
 
     .latte-card__img-wrap img {
         position: relative;
-        bottom: 4.5rem;
-        right: 4.5rem;
+        bottom: 0;
+        right: 2.5rem;
         height: fit-content;
         width: auto;
         object-fit: contain;
@@ -394,7 +394,6 @@
 
 
     .latte-card__body {
-        
         padding: 30px 40px;
     }
 

@@ -1160,8 +1160,6 @@ hr {
 }
 
 .latte-card__body {
-    position: relative;
-    bottom: 4rem;
     padding: 40px;
 }
 
